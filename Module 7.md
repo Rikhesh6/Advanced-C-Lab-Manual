@@ -17,24 +17,22 @@ Else
 ## Program:
 
 ```
-#include<stdio.h> struct eligib
+#include<stdio.h>
+struct eligib
 {
 int age; char n[4];
 };
 int main()
 {
-struct eligib e; scanf("%d%s",&e.age,e.n);
+struct eligib e;
+scanf("%d%s",&e.age,e.n);
 if(e.age<=6)
 {
 printf("Age:%d\nName:%svaccine:%d\neligibility:no",e.age,e.n,e.age);
 }
  
 else
-{
-}
- 
-
-printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);
+{printf("Age:%d\nName:%svaccine:%d\neligibility:yes",e.age,e.n,e.age);}
  
 
 }
@@ -67,11 +65,13 @@ To write a C program for passing structure as function and returning a structure
 ## Program:
 
 ```
-#include<stdio.h> struct numbers
+#include<stdio.h>
+struct numbers
 {
 int a; int b;
 }n;
-int add(struct numbers n); int main()
+int add(struct numbers n);
+int main()
 {
 
 scanf("%d %d ",&n.a,&n.b);
